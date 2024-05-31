@@ -49,7 +49,8 @@ if choice == "User input":
     st.markdown("<h1 style='color: red;'>Please enter input data for Stress Level Prediction</h1>", unsafe_allow_html=True)
 
     # Load the stress level prediction model
-    stress_model = pickle.load(open("STUDENT_MENTAL_HEALTH (3).sav", 'rb'))
+    with open("STUDENT_MENTAL_HEALTH (3).sav", "rb") as file:
+      stress_model = pickle.load(file)
     course_mapping = {
         'ALA': 0, 'Accounting': 1, 'BCS': 2, 'BENL': 3, 'BIT': 4, 'Banking Studies': 5,
         'Biomedical Science': 6, 'Biotechnology': 7, 'Business Administration': 8, 'CTS': 9,
