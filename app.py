@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import pickle
 import sqlite3
+import sklearn
 import pandas as pd
 from PIL import Image
 
