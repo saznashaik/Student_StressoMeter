@@ -49,7 +49,7 @@ if choice == "User input":
     st.markdown("<h1 style='color: red;'>Please enter input data for Stress Level Prediction</h1>", unsafe_allow_html=True)
 
     # Load the stress level prediction model
-    stress_model = pickle.load(open("/content/STUDENT_MENTAL_HEALTH (2).sav", 'rb'))
+    stress_model = pickle.load(open("/content/STUDENT_MENTAL_HEALTH (3).sav", 'rb'))
     course_mapping = {
         'ALA': 0, 'Accounting': 1, 'BCS': 2, 'BENL': 3, 'BIT': 4, 'Banking Studies': 5,
         'Biomedical Science': 6, 'Biotechnology': 7, 'Business Administration': 8, 'CTS': 9,
@@ -167,7 +167,7 @@ if choice == "For Queries":
     st.write('  maanasak@gmail.com', type='mail')
     st.write('  kavyavemuri@gmail.com', type='mail')
     st.write('  manjula143@gmail.com', type='mail')
-    image = Image.open('stress.jpeg')
+    # image = Image.open('stress.jpeg')
 
 # Close the database connection
 conn.close()
